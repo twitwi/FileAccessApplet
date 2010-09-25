@@ -3,6 +3,8 @@
 ## drive from a webpage (e.g. javascript app)       ##
 ######################################################
 
+You can get the compiled version directly from the "release" folder of this project.
+
 Below is a simple code snippet on how to use it.
 Important notes:
  * the jar must be signed for the browser to propose additional privileges to the user (priviledge to access the file system). You can create necessary files to sign the jar by running "keytool -genkey -alias applet-key -keystore applet-keystore".
