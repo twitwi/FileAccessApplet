@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Hello Filesystem</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"></meta>
+    <script type="text/javascript">
+     function writeHello(who, where) {
+            var japplet = document.getElementById("japplet");
+            alert(japplet);
+            japplet.writeFile("Hello " + who, where);
+            alert("File '" + where + "' should have been written.");
+            alert("It now contains:\n" + japplet.readFile(where));
+        }
+    </script>
+</head>
+
+<body>
+    <applet id="japplet" code="com/heeere/fileaccessapplet/FacadeApplet.class" archive="target/FileAccessApplet-1.0.jar"  width="20" height="20" mayscript="true"></applet>
+    Will say hello to <input id="who" type="text" value="world!"/>
+    and write it to <input id="where" type="text" value="please enter a full path name"/>
+    <br/>
+    <input type="button" value="write message"
+           onclick="writeHello(
+                               document.getElementById('who').value,
+                               document.getElementById('where').value)"
+           />
+</body>
+</html>
