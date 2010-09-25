@@ -3,7 +3,8 @@
 ## drive from a webpage (e.g. javascript app)       ##
 ######################################################
 
-You can get the compiled version directly from the "release" folder of this project.
+You can get the compiled version directly from the "release" folder of this project:
+  http://github.com/twitwi/FileAccessApplet/raw/master/release/FileAccessApplet-1.0.jar
 
 Below is a simple code snippet on how to use it.
 Important notes:
